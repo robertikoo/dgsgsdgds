@@ -1,0 +1,11 @@
+{
+    "admin":[
+        {"id":1, "nombre":"nick", "contraseña":"admin" }
+    ],
+    "miembro":[
+        {"id":"", "nombre":"", "contraseña":""}
+    ],
+    "registro":[
+        {"id":"", "nombre":"", "contraseña":"", "direccion":"", "telefono":"" }
+    ]
+}

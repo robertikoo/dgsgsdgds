@@ -1,0 +1,8 @@
+<h1>Perfiles </h1>
+<hr>
+<div class="card-columns">
+    
+    <app-cuadros (Seleccionado)="verPerfil( $event )" [perfil]="perfil" [index]="i" *ngFor="let perfil of perfiles; let i = index"></app-cuadros>
+    
+</div>
+

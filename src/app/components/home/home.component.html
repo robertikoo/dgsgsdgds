@@ -1,0 +1,44 @@
+<style>
+  .user-box img {
+      width: 100%;
+      border-radius: 50%;
+      padding: 3px;
+      background: #fff;
+      -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+      -ms-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+  .profile-card-4 .user-box {
+      width: 110px;
+      margin: auto;
+      margin-bottom: 10px;
+      margin-top: 15px;
+  }
+
+  
+  </style>
+
+
+<div class="container" *ngFor="let video of videos">
+  
+        <div>
+          <ul class="nav nav-pills nav-pills-primary nav-justified">
+         <li class="nav-item">
+         <a data-target="#profile" data-toggle="pill" class="nav-link active show"><i class="icon-user"></i> <span class="hidden-xs"><strong> {{video.nombre}}</strong></span></a>
+         </li>
+         </ul>
+     </div>
+     <hr>
+     <div layout-align="center" class="tab-pane active show" id="profile">
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/Sx_2dOYOtes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>    
+      <hr>
+      <div>
+       <ul class="nav nav-pills nav-pills-primary nav-justified">
+      <li class="nav-item">
+      <a data-target="#profile" data-toggle="pill" class="nav-link active show"><i class="icon-user"></i> <span class="hidden-xs"><strong> {{video.texto}}</strong></span></a>
+      </li>
+      </ul>
+  </div>
+  

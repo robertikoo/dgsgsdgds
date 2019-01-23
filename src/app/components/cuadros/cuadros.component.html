@@ -1,0 +1,44 @@
+
+<style>
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  </style>
+
+<div class="container">
+<div class="row">
+  <ul class="thumbnails">
+      
+        <div class="thumbnail">
+          <img class="card-img-top" [src]="perfil.img" [alt]="perfil.nombre">
+          <div class="caption">
+            <h3 layout-align="center">{{ perfil.nombre }} {{ perfil.apellido }}</h3>
+            <p  layout-align="center">{{ perfil.rut }}</p>
+            <p  layout-align="center">{{ perfil.fechanacimiento }}</p>
+            <button (click)="verPerfil()" class="btn btn-primary btn-block">
+                  Ver más
+            </button>
+            
+          </div>
+        </div>
+       </ul>
+</div>
+</div>
+
+
+
