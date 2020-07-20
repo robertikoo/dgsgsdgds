@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PerfilComponent } from '../perfil/perfil.component';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
 
+  public credentials = {
+    nombre : '',
+    apellido : '',
+    edad : 0,
+    email : '',
+    password : ''
+  };
   constructor() { }
 
   ngOnInit() {
   }
 
+  registro() {
+    console.log('Lo que se valla hacer al registrar');
+    console.log( this.credentials );
+  }
 }

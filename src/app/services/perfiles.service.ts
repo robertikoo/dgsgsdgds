@@ -15,9 +15,9 @@ export class PerfilesService {
       email:"",
       password:"",
       img: "assets/img/avatar.png",
-      tipoPerfil
+      tipoPerfil: ''
      }
- 
+
 
     ];
 

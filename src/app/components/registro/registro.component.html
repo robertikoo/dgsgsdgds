@@ -1,26 +1,30 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 mt-5 mx-auto">
-      <form (submit)="registro()">
-        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-        <div class="form-group">
-          <label for="name">First name</label>
-          <input type="text" class="form-control" name="first_name" placeholder="Enter your first name" [(ngModel)]="credentials.first_name">
-        </div>
-        <div class="form-group">
-          <label for="name">Last name</label>
-          <input type="text" class="form-control" name="last_name" placeholder="Enter your lastname name" [(ngModel)]="credentials.last_name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
-        </div>
-        <button type="submit" class="btn btn-lg btn-primary btn-block">Registro</button>
-      </form>
+    <div class="row">
+      <div class="col-md-6 mt-5 mx-auto">
+        <form (submit)="registro()">
+          <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name="nombre" placeholder="Ingrese su  nombre" [(ngModel)]="credentials.nombre">
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido" placeholder="Ingrese su apellido" [(ngModel)]="credentials.apellido">
+          </div>
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" class="form-control" name="edad" placeholder="Ingrese su edad" [(ngModel)]="credentials.edad">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" placeholder="Ingrese su correo electronico" [(ngModel)]="credentials.email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Ingrese su contraseña" [(ngModel)]="credentials.password">
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary btn-block">registrar</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>

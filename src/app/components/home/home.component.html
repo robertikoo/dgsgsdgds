@@ -1,44 +1,61 @@
-<style>
-  .user-box img {
-      width: 100%;
-      border-radius: 50%;
-      padding: 3px;
-      background: #fff;
-      -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-      -ms-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-  }
-  .profile-card-4 .user-box {
-      width: 110px;
-      margin: auto;
-      margin-bottom: 10px;
-      margin-top: 15px;
-  }
-
-  
-  </style>
+<video src="assets/vid/iglesia.mp4" width="1080" height="370" controls muted autoplay preload></video>
 
 
-<div class="container" *ngFor="let video of videos">
+<!--Carousel Wrapper-->
+<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+  <!--First slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+  <!--/First slide-->
+  <!--Second slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+  <!--/Second slide-->
+  <!--Third slide-->
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+  <!--/Third slide-->
+</mdb-carousel>
+<!--Carousel Wrapper-->
+Gallery with slides and capti
+ 
+
+<carousel>
+    
+    <slide>
+        <img src="assets/img/bienvenido.jpg"  width="1280" height="370" alt="first slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Bienvenido</h1>
+          <p>no hay mejor lugar que tu casa.</p>
+        </div>
+      </slide>
+  <slide>
+    <img src="assets/img/san.png" alt="second slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block" >
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/img/la.png" alt="third slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </slide>
+  <slide>
+    <img src="assets/img/letrero.jpg" alt="quarter slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      </div>
   
-        <div>
-          <ul class="nav nav-pills nav-pills-primary nav-justified">
-         <li class="nav-item">
-         <a data-target="#profile" data-toggle="pill" class="nav-link active show"><i class="icon-user"></i> <span class="hidden-xs"><strong> {{video.nombre}}</strong></span></a>
-         </li>
-         </ul>
-     </div>
-     <hr>
-     <div layout-align="center" class="tab-pane active show" id="profile">
-      <iframe width="400" height="315" src="https://www.youtube.com/embed/Sx_2dOYOtes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>    
-      <hr>
-      <div>
-       <ul class="nav nav-pills nav-pills-primary nav-justified">
-      <li class="nav-item">
-      <a data-target="#profile" data-toggle="pill" class="nav-link active show"><i class="icon-user"></i> <span class="hidden-xs"><strong> {{video.texto}}</strong></span></a>
-      </li>
-      </ul>
-  </div>
-  
+  </slide>
+</carousel>

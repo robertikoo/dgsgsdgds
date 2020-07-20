@@ -18,7 +18,9 @@ export class CuadrosComponent implements OnInit {
   @Input() eventos: any = {}
   @Input() login: any = {}
   @Input() registro: any = {}
+  @Input() contacto: any = {}
   @Input() ubicacion: any = {}
+  @Input() creditos: any = {}
 
   @Output() Seleccionado: EventEmitter<number>;
 
@@ -62,8 +64,15 @@ export class CuadrosComponent implements OnInit {
     this.router.navigate(['/registro', this.index]);
   }
 
+  verContacto(){
+    this.router.navigate(['/contacto', this.index]);
+  }
+
+
   verUbicacion(){
     this.router.navigate(['/ubicacion', this.index]);
   }
-
+  verCreditos(){
+    this.router.navigate(['/creditos', this.index]);
+  }
 }
